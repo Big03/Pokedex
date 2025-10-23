@@ -1,0 +1,29 @@
+
+
+// N:\andru_sci\pzaw\pokedex
+
+// pokedex.json -> pokedex dir
+// types.json -> pokedex dir
+
+
+// tworzymy 2 komponenty:
+// - TypeButton
+// - Pokedex
+
+// TypeButton
+// -> ma posiadać stan -> zaznaczony/niezaznaczony
+// -> useState( bool ) -> true/false
+// -> onClick -> handler/funkcja zmienia stan
+//                                           zaznaczony  / niezaznaczony
+// -> style do tego wykorzystać bootstrapa ( btn-primary / btn-light )
+// -> ma posiadać props (action, która jest wywołana przez useEffect, kiedy stan się zmieni)
+// -> ta akcja ma być przekazana przez atrybut, jak komponent będzie utworzony 
+
+// komponent Tile, gdzie dostaje informacje za pomocą propsów (atrybut)
+// Tile jest minikomponentem, który odpowiada za wyświetlenie informacji takich jak obrazek/name(english)/type
+
+// Pokedex
+// Pokedex generuje przyciski za pomocą listy z types.json 
+// - pokedex przekazuje funkcje do przycisku, najpierw niech będzie sam console.log
+// Pokedex generuje Tiles za pomoca listy z pokedex.json
+
